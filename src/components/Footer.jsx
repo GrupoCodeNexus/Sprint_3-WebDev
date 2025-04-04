@@ -2,9 +2,12 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+    <footer className='rodape'>
+      <h6>Todos os direitos reservados | 2025 - @CodeNexus</h6>
+    </footer>
+    
+    </>
   )
 }
 

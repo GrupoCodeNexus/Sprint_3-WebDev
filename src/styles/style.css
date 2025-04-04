@@ -1,0 +1,52 @@
+/*reset CSS*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+
+/*body da pag error*/
+.body-error{
+    background-color: rgb(74, 120, 81);
+}
+
+.body-error h1,p{
+    color: #fff;
+}
+
+/*nav*/
+.c-nav{
+    background-color: rgb(48, 48, 102);
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-link{
+    color: #fff;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.nav-link:hover{
+    transform: scale(1.07);
+    border: 2px solid rgb(120, 107, 167);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(105, 112, 176);
+    color: #fff;
+}
+
+
+/*rodape*/
+.rodape{
+    display: flex;
+    justify-content: center;
+    margin: 10% 0% 2% 0%;
+    background-color: rgb(43, 43, 94);
+    color: #fff;
+    padding: 20px;
+}

@@ -2,10 +2,13 @@ import React from 'react'
 
 const Error = () => {
   return (
-    <body className="body-error">
+    <body className='body-error'>
+    <div className="body-error">
       <h1>Error 404 - Página não encontrada</h1>
-      <p>preste atenção...</p>
-      
+      <div className='error'>
+        <p>Essa página não é a página que você estava buscando.</p>
+      </div>
+    </div>
     </body>
   )
 }

@@ -8,7 +8,13 @@
 
 /*body da pag error*/
 .body-error{
-    background-color: rgb(74, 120, 81);
+    background-color: rgb(198, 202, 219);
+}
+
+.container-error{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25%;
 }
 
 .body-error h1,p{

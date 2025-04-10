@@ -6,7 +6,8 @@ import Login from './routes/Login'
 import Home from './routes/Home'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
-
+import Problema from './routes/Problema'
+import Solucao from './routes/Solucao'
 
 const App = () => {
   return (
@@ -17,6 +18,8 @@ const App = () => {
         <Route path="*" element={<Error/>}/>
         <Route path="/" element={<Login/>}/>
         <Route path="/home" element={<Home/>}/>
+        <Route path="/Problema" element={<Problema/>}/>
+        <Route path="/Solucao" element={<Solucao/>}/>
       </Routes>
       <Footer/> 
     </Router>  

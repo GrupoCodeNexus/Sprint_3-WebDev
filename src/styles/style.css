@@ -3,7 +3,17 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Verdana;
+    font-family: Nunito;
+}
+
+/*criando variáveis de cor*/
+:root{
+    --bg-color: #DDE1E6;
+    --sec-bg-color: #F8F9FA;
+    --blue-medic: #3A7CA5;
+    --green-chill: #6FB98F;
+    --red: #C94C4C;
+    --yel: #F9E79F;
 }
 
 /*body da pag error*/
@@ -23,28 +33,110 @@
 
 /*nav*/
 .c-nav{
-    background-color: rgb(48, 48, 102);
     height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: var(--blue-medic);
 }
 
 .nav-link{
+    background-color: var(--blue-medic);
     color: #fff;
-    padding: 4px 10px;
-    border: 2px solid white;
-    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    border-radius: 3px;
 }
 
 .nav-link:hover{
-    transform: scale(1.07);
-    border: 2px solid rgb(120, 107, 167);
-    border-radius: 10px;
+    transform: scale(1.11);
+    border: 2px solid var(--bg-color);
     padding: 4px 10px;
-    background-color: rgb(105, 112, 176);
-    color: #fff;
+    border-radius: 5px;
 }
+
+
+/*Home*/
+.body-home{
+    background-color: var(--sec-bg-color);
+}
+
+.c-content-home{
+    position: relative;
+    width: fit-content;
+    display: inline-block;
+    border: 7px solid var(--blue-medic);
+}
+
+#text-overlay{ /*sobrepondo o texto na img*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+.button-overlay{ /*sobrepondo o button na img*/
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--green-chill);
+    background-color: var(--green-chill);
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--bg-color);
+    font-weight: 600;
+}
+
+.content-home img{
+    filter: blur(2.5px);
+}
+
+.content-home h1{
+    text-align: center;
+    
+}
+
+.c-desafio{
+    display: flex;
+    justify-content: space-around;
+}
+
+.content-problema{
+    background-color: var(--yel);
+    padding: 10px;
+}
+
+.content-problema img{
+    width: 50%
+}
+
+.content-dados{
+    background-color: var(--red);
+    padding: 10px;
+}
+
+.content-solucao{
+    background-color: var(--green-chill);
+    padding: 10px;
+}
+
+.content-solucao button{
+    cursor: pointer;
+    border: 2px solid var(--bg-color);
+    padding: 4px;
+    background-color: var(--bg-color);
+}
+
+.size{
+    width: 100%;
+}
+
+
+
 
 
 /*rodape*/
@@ -52,7 +144,7 @@
     display: flex;
     justify-content: center;
     margin: 10% 0% 2% 0%;
-    background-color: rgb(43, 43, 94);
+    background-color: var(--blue-medic);
     color: #fff;
     padding: 20px;
 }

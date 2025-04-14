@@ -15,10 +15,10 @@ const Footer = () => {
         <div class="c-right">
             <h2 id="title-right">Desenvolvedores do projeto</h2>
             <ul>
-                <li><a href="https://www.linkedin.com/in/franciscovargas7/"><img src="./src/assets/linkedin.png"/></a><a>Francisco Vargas</a></li>
-                <li><a href="https://www.linkedin.com/in/"><img src="./src/assets/linkedin.png"/></a><a>Matheus Irizawa</a></li>
-                <li><a href="https://www.linkedin.com/in/kayque-carvalho-49a190283/"><img src="./src/assets/linkedin.png"/></a><a>Kayque Carvalho</a></li>
-                <li><a href="https://www.linkedin.com/in/"><img src="./src/assets/linkedin.png"/></a><a>Marcelo Affonso</a></li>
+                <li><a href="https://www.linkedin.com/in/franciscovargas7/">Francisco Vargas</a></li>
+                <li><a href="https://www.linkedin.com/in/">Matheus Irizawa</a></li>
+                <li><a href="https://www.linkedin.com/in/kayque-carvalho-49a190283/">Kayque Carvalho</a></li>
+                <li><a href="https://www.linkedin.com/in/">Marcelo Affonso</a></li>
             </ul>
         </div>
         <div class="c-mid">

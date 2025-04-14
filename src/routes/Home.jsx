@@ -10,7 +10,7 @@ const Home = () => {
           <img src="https://institutopensi.org.br/wp-content/uploads/2022/11/estagio_2023.jpg" alt='medicos-estagiando'/>
           <h1 id='text-overlay'>Sprint 3 | Challenge Hospital Infantil Sabará</h1>
           <div class="button-overlay">
-            <button>Conferir a solução</button>
+            <button class="btn-perso">Conferir a solução</button>
           </div>
         </div>
       </div>

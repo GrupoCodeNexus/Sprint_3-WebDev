@@ -91,6 +91,20 @@
     font-weight: 600;
 }
 
+.button-overlay button:hover{
+    cursor: pointer;
+    color: var(--green-chill);
+    background-color: var(--sec-bg-color);
+    transition: 0.3s ease-in-out;
+}
+
+.button-overlay:hover{
+    cursor: pointer;
+    color: var(--green-chill);
+    background-color: var(--sec-bg-color);
+    transition: ease 0.3s;
+}
+
 .content-home img{
     filter: blur(2.5px);
 }
@@ -181,6 +195,75 @@
 }
 
 
+
+/*problema abordado*/
+.c-problema{
+    padding: 20px;
+    margin: 5% 5% 0% 5%;
+    border: 2px solid var(--blue-medic);
+    border-radius: 10px;
+}
+
+.c-problema p{
+    color: var(--blue-medic);
+    padding-top: 10px;
+}
+
+.letra-n{
+    font-size: 2rem;
+}
+
+.c-problema h2{
+    border-left: 8px solid var(--blue-medic);
+    font-size: 3rem;
+    font-weight: 700;
+    padding-left: 5px;
+    color: var(--blue-medic);
+}
+
+
+
+/*nossa solução*/
+.c-solucao{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.c-solucao h2{
+    color: var(--blue-medic);
+    font-weight: 600;
+    font-size: 25px;
+    margin: 10% 0% 5% 0%;
+}
+
+.c-solucao p{
+    color: black;
+    padding: 20px;
+}
+
+.c-solucao a{
+    color: var(--blue-medic);
+    font-weight: 800;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.c-solucao b{
+    color: var(--blue-medic);
+    font-size: 20px;
+}
+
+.link-img-solucao{
+    border: 2px solid var(--blue-medic);
+    margin: 4%;
+    transition: 0.3s ease;
+}
+
+.link-img-solucao:hover{
+    background-color: rgb(201, 210, 255);
+}
+
 /*Error*/
 .c-error{
     margin-top: 10%;
@@ -221,4 +304,5 @@
     width: 30px;
     margin: 5px 10px -10px 5px;
     padding: 5px;
+
 }

@@ -1,30 +1,32 @@
 import React from 'react'
-
+import icone1 from '../assets/icone1.png'
+import sistema from '../assets/sistema.png'
 
 const Solucao = () => {
   return (
-    <div>
       <>
-      <main>
-        <div className='c-solucao'>
-          <div className='solucao'>
-            <h2>Carrinho de Suprimentos Inteligente</h2>
-            <p>Descrição breve da ideia. <a>Leia mais.</a></p>
-            <ul>
-              <li className='link-img-solucao'><img src='' alt='icone'/><p><b>Segurança</b> a nossa solução garante segurança</p></li>
-              <li className='link-img-solucao'><img src='' alt='icone'/><p><b>Agilidade</b> a nossa solução garante agilidade</p></li>
-              <li className='link-img-solucao'><img src='' alt='icone'/><p><b>Controle</b> a nossa solução garante controle</p></li>
-            </ul>
-            <img src='' alt='img1'/> {/*a ideia é fazer a img aparecer assim que passar o mouse no primeiro li e assim por diante*/}
-            <img src='' alt='img2'/>
-            <img src='' alt='img3'/>
+        <div className='c-sistema'>
+          <div className='sistema'>
+            <h2>Sistema de cadastros de tratamentos</h2>
+            <p>Cadastre seus pacientes e acompanhe o andamento.</p>
+            <img src={sistema} alt='sistema-tratamentos'/>
           </div>
         </div>
-      </main>
+
+        <div className='c-solucao'>
+          <div className='solucao'>
+            <h2>Implementação</h2>
+            <p>Carrinho de suprimentos médicos. <a>Leia mais.</a></p>
+            <ul>
+              <li className='link-img-solucao'><img src='' alt='icone'/><p><b>Segurança</b> a nossa solução garante segurança</p></li>
+              <li className='link-img-solucao'><img src={icone1} alt='icone'/><p><b>Agilidade</b> a nossa solução garante agilidade</p></li>
+              <li className='link-img-solucao'><img src='' alt='icone'/><p><b>Controle</b> a nossa solução garante controle</p></li>
+            </ul>
+          </div>
+        </div>
       
       
       </>
-    </div>
   )
 }
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import dash from '../assets/dash.png'
 import future from '../assets/future.png'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -12,7 +13,9 @@ const Home = () => {
           <img src="https://institutopensi.org.br/wp-content/uploads/2022/11/estagio_2023.jpg" alt='medicos-estagiando'/>
           <h1 id='text-overlay'>Sprint 3 | Challenge Hospital Infantil Sabará</h1>
           <div class="button-overlay">
-            <button class="btn-perso">Conferir a solução</button>
+            <Link to="/Solucao">
+              <button className="btn-perso">Conferir a solução</button>
+            </Link>
           </div>
         </div>
       </div>

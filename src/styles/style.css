@@ -16,6 +16,74 @@
     --yel: #F9E79F;
 }
 
+.c-login {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente (se houver altura na página) */
+    min-height: 100vh; /* Garante que ocupa a altura total da tela, se necessário */
+    background-color: var(--blue-medic); /* Um tom de azul bem claro como fundo */
+  }
+  
+  .login {
+    background-color: #ffffff; /* Fundo branco para o formulário */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Uma sombra suave para destacar */
+    width: 300px; /* Largura do formulário (ajuste conforme necessário) */
+    text-align: center; /* Centraliza o texto dentro do formulário */
+  }
+  
+  .login h1 {
+    color: var(--blue-medic); /* Azul mais forte para o título */
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .login label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--blue-medic); /* Cor escura para as labels */
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-align: left; /* Alinha as labels à esquerda */
+  }
+  
+  .login input[type="text"],
+  .login input[type="password"] {
+    width: calc(100% - 22px); /* Ajusta a largura para considerar o padding */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que padding e border não aumentem a largura total */
+  }
+
+  #username, #password{
+    font-size: 0.8rem;
+  }
+  
+  .login button[type="submit"] {
+    background-color: var(--blue-medic); /* Azul para o botão */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+  }
+  
+  .login button[type="submit"]:hover {
+    background-color: #2b678d; /* Um tom de azul um pouco mais escuro no hover */
+    transform: scale(1.02);
+  }
+  
+  .login p[style*="color: red"] { /* Estilo para a mensagem de erro (se for mostrada) */
+    margin-top: 10px;
+    font-size: 0.9em;
+  } 
+
+
 /*body da pag error*/
 .body-error{
     background-color: rgb(198, 202, 219);
@@ -155,16 +223,13 @@
 
 .c-desafio img{
     align-items: center;
+    width: 50%;
 }
 
 .content-problema{
     background-color: var(--yel);
     padding: 10px;
     transition: all 0.3s;
-}
-
-.content-problema img{
-    width: 50%
 }
 
 .content-dados{
@@ -220,7 +285,6 @@
     padding-left: 5px;
     color: var(--blue-medic);
 }
-
 
 
 /*nossa solução*/

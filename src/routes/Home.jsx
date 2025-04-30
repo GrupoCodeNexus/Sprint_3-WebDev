@@ -1,4 +1,6 @@
 import React from 'react'
+import dash from '../assets/dash.png'
+import future from '../assets/future.png'
 
 const Home = () => {
   return (
@@ -17,19 +19,18 @@ const Home = () => {
 
       <div class="c-desafio"> {/*container desafio, dentro dele tem 3 cards*/}
         <div class="content-problema size scale-card">
-          <h2>Soluções tecnológicas para o Hospital</h2>
-          <img src="https://cdn-icons-png.flaticon.com/512/8242/8242600.png" alt='desafio-proposto'/>
-          <p>O desafio que foi entregue tinha como objetivo desenvolvermos alguma solução tecnológica que ajudasse em alguma área do Hospital</p>
+          <img src={future} alt='desafio-proposto'/>
+          <p>des</p>
           <a href='google.com.br'><button>Saiba mais</button></a>
         </div>
         <div class="content-dados size scale-card">
-          <h2>Dados</h2>
-          <p>Confira alguns dados</p>
+          <img src={dash} alt="dados-icon"/>
+          <p>Dashboards & Relatórios</p>
           <a href='google.com.br'><button>Saiba mais</button></a>
         </div>
         <div class="content-solucao size scale-card">
-          <h2>Nossa Solução</h2>
-          <p>Carrinho de Suprimentos Médicos</p>
+          <img src={future} alt='future-icon'/>
+          <p>Projeção Futura: Integração Sistema + Carrinho</p>
           <a href='google.com.br'><button>Saiba mais</button></a>
         </div>
       </div>

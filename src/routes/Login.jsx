@@ -16,7 +16,7 @@ const Login = () => {
     );
   };
     const handleSubmit = (e) => {
-      e.preventDefault(); // evita o imput 
+      e.preventDefault(); // evita o input 
       if (verificarLogin(usuario, senha)) {
           localStorage.setItem("Usuário", usuario); //Armazena o nome do usuario ao localstorage
           navigate("/Home") //Redireciona para a página Home
@@ -28,20 +28,19 @@ const Login = () => {
 
   return (
     // Estrutura do formulário
-    <form onSubmit={handleSubmit}>
-    <h1>Login</h1>   
-          <label htmlFor="username">Nome de Usuário:</label>
-          <input type="text" id="username" value={usuario} onChange={(e) => setUsername(e.target.value)} required />
-          <label htmlFor="password">Senha:</label>
-          <input type="password" id="password" value={senha} onChange={(e) => setPassword(e.target.value)} required />
-          <button type="submit">Entrar</button>    
-          {/* APRESENTA MENSAGEM DE ERRO - ainda em desenvolvimento  */}
-          {/* {error && <p style={{ color: 'red' }}>{error}</p>} */}
-
-
-
-          {/* LEMBRETE: Adicionar um alert para o usuário quando ele logar no site */}
-    </form>
+    <div className='c-login'>
+      <form className='login' onSubmit={handleSubmit}>
+      <h1>Login</h1>   
+            <label htmlFor="username">Nome de Usuário:</label>
+            <input type="text" placeholder='Digite seu usuário' id="username" value={usuario} onChange={(e) => setUsername(e.target.value)} required />
+            <label htmlFor="password">Senha:</label>
+            <input type="password" placeholder='Digite sua senha' id="password" value={senha} onChange={(e) => setPassword(e.target.value)} required />
+            <button type="submit">Entrar</button>    
+            {/* APRESENTA MENSAGEM DE ERRO - ainda em desenvolvimento  */}
+            {/* {error && <p style={{ color: 'red' }}>{error}</p>} */}
+            {/* LEMBRETE: Adicionar um alert para o usuário quando ele logar no site */}
+      </form>
+    </div>
   );
 };
 

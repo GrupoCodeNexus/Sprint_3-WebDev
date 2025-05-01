@@ -1,6 +1,6 @@
 import React from 'react'
-import icone1 from '../assets/icone1.png'
 import sistema from '../assets/sistema.png'
+import carrinho from '../assets/carrinho1.png'
 
 const Solucao = () => {
   return (
@@ -13,18 +13,14 @@ const Solucao = () => {
           </div>
         </div>
 
-        <div className='c-solucao'>
-          <div className='solucao'>
-            <h2>Implementação</h2>
-            <p>Carrinho de suprimentos médicos. <a>Leia mais.</a></p>
-            <ul>
-              <li className='link-img-solucao'><img src='' alt='icone'/><p><b>Segurança</b> a nossa solução garante segurança</p></li>
-              <li className='link-img-solucao'><img src={icone1} alt='icone'/><p><b>Agilidade</b> a nossa solução garante agilidade</p></li>
-              <li className='link-img-solucao'><img src='' alt='icone'/><p><b>Controle</b> a nossa solução garante controle</p></li>
-            </ul>
+        <div className='c-projecao'>
+          <div className='projecao'>
+            <h2>Projeção Futura</h2>
+            <small>Integração do carrinho com o sistema & Upgrades</small>
+            <img src={carrinho}/>
           </div>
         </div>
-      
+
       
       </>
   )

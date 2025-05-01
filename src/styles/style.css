@@ -223,6 +223,7 @@
 
 .c-desafio img{
     align-items: center;
+    padding: 20px;
     width: 50%;
 }
 
@@ -318,50 +319,34 @@
     transform: scale(1.04);
 }
 
-.c-solucao{
+
+/*Projeção*/
+.c-projecao{
     display: flex;
     justify-content: center;
-    padding: 20px;
-}
-
-.c-solucao h2{
-    color: var(--blue-medic);
-    font-weight: 600;
-    font-size: 25px;
-    margin: 10% 0% 5% 0%;
     text-align: center;
+    margin-top: 15%;
 }
 
-.c-solucao p{
-    color: black;
-    padding: 20px;
+.projecao h2{
+    font-size: 2rem;
+    color: #2b678d;
+    font-weight: 600;
 }
 
-.c-solucao a{
+.projecao small{
     color: var(--blue-medic);
-    font-weight: 800;
-    font-size: 17px;
-    cursor: pointer;
 }
 
-.c-solucao b{
-    color: var(--blue-medic);
-    font-size: 20px;
+.projecao img{
+    transition: all 0.3s;
+    margin-top: -15%;
 }
 
-.solucao li img{
-    width: 100px;
+.projecao img:hover{
+    transform: scale(1.05);
 }
 
-.link-img-solucao{
-    border: 2px solid var(--blue-medic);
-    margin: 4%;
-    transition: 0.3s ease;
-}
-
-.link-img-solucao:hover{
-    background-color: rgb(201, 210, 255);
-}
 
 /*Error*/
 .c-error{
